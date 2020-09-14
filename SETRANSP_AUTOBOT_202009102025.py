@@ -135,5 +135,11 @@ p.hotkey('enter')
 p.press('tab',presses=7,interval=0.1)
 p.hotkey('enter')
 
+#closing the notebook and the mozila window:
+p.hotkey('ctrl','w')
+t.sleep(0.2)
+p.moveTo(1416,-882)
+p.click()
+
 
 #send email have be in a diferent program. OK.
