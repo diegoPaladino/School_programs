@@ -129,7 +129,7 @@ t.sleep(1)
 p.write('SETRANSP-AGOSTO')
 p.press('tab',presses=7,interval=0.1)
 p.hotkey('enter')
-p.write(r'C:\Users\diego\OneDrive\Desktop\DESKTOP\DATA_SCIENCE\PYTHON\BOT_SETRANSP\setransp_archive_generator',interval=0.01)
+p.write(r'C:\Users\diego\OneDrive\Desktop\DESKTOP\DATA_SCIENCE\PYTHON\SETRANSP_AUTO_BOT',interval=0.01)
 p.hotkey('enter')
 #moving the cursor to 'save' button
 p.press('tab',presses=7,interval=0.1)

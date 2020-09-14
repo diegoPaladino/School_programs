@@ -1,0 +1,404 @@
+1599779821267	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofile3nEx0i"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599779827638	Marionette	INFO	Listening on port 54645
+1599779827819	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1599780151894	Marionette	INFO	Stopped listening on port 54645
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599780184261	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofile5PeoG9"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599780188821	Marionette	INFO	Listening on port 54776
+1599780189084	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1599780415846	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileJyZNwC"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599780419923	Marionette	INFO	Listening on port 54872
+1599780420046	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1599780569229	Marionette	INFO	Stopped listening on port 54872
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599780574390	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofile2xMlPa"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599780578491	Marionette	INFO	Listening on port 54956
+1599780578608	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1599780693445	Marionette	INFO	Stopped listening on port 54956
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599780698059	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofiletnFLsG"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599780702192	Marionette	INFO	Listening on port 55038
+1599780702230	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1599780748118	Marionette	INFO	Stopped listening on port 55038
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599780753296	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofilepoQrED"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599780757582	Marionette	INFO	Listening on port 55114
+1599780757612	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+JavaScript error: http://www.gemul-aparecida.com.br/gemul2015/js/menu.js, line 87: TypeError: b is null
+JavaScript error: http://www.gemul-aparecida.com.br/gemul2015/js/menu.js, line 87: TypeError: b is null
+1599781282924	Marionette	INFO	Stopped listening on port 55114
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599781288425	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofilevJx6iu"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599781292688	Marionette	INFO	Listening on port 55261
+1599781292745	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1599781320107	Marionette	INFO	Stopped listening on port 55261
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599781324225	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileUQHz2v"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599781328537	Marionette	INFO	Listening on port 55328
+1599781329015	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1599781371272	Marionette	INFO	Stopped listening on port 55328
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599781376263	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileXHZbh1"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599781380215	Marionette	INFO	Listening on port 55399
+1599781380445	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1599781407250	Marionette	INFO	Stopped listening on port 55399
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599781411534	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileGyEgbR"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599781415157	Marionette	INFO	Listening on port 55468
+1599781415264	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1599781440201	Marionette	INFO	Stopped listening on port 55468
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599781444147	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileE5DvTu"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599781448105	Marionette	INFO	Listening on port 55534
+1599781448318	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+JavaScript error: , line 0: uncaught exception: Object
+[Parent 9884, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1600084045789	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileLLFFMp"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600084049889	Marionette	INFO	Listening on port 55013
+1600084049978	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600084089656	Marionette	INFO	Stopped listening on port 55013
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600084094113	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileTKgvpf"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600084098465	Marionette	INFO	Listening on port 55078
+1600084098941	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600084160097	Marionette	INFO	Stopped listening on port 55078
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600084165497	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileJhTz78"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600084170680	Marionette	INFO	Listening on port 55156
+1600084170792	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600084199013	Marionette	INFO	Stopped listening on port 55156
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600084203103	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileH3RrtL"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600084207612	Marionette	INFO	Listening on port 55225
+1600084207917	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600084285283	Marionette	INFO	Stopped listening on port 55225
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600084295317	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofile6sa4Ms"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600084299926	Marionette	INFO	Listening on port 55302
+1600084300149	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600085231014	Marionette	INFO	Stopped listening on port 55302
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 7820, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 524
+1600085242334	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofile5Jt1CQ"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600085246464	Marionette	INFO	Listening on port 55487
+1600085246504	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600085277981	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofilee2g1BK"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600085282139	Marionette	INFO	Listening on port 55553
+1600085282179	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600085360905	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofilemmcnG1"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600085364966	Marionette	INFO	Listening on port 55627
+1600085365114	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600085473745	Marionette	INFO	Stopped listening on port 55627
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 8604, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 524
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600085800100	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofilenM5dVR"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600085804237	Marionette	INFO	Listening on port 55755
+1600085804291	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600085843822	Marionette	INFO	Stopped listening on port 55755
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600085848613	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileuVxBzr"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600085852700	Marionette	INFO	Listening on port 55822
+1600085852820	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600085997116	Marionette	INFO	Stopped listening on port 55822
+1600087102453	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofiles9rIhd"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600087106528	Marionette	INFO	Listening on port 56031
+1600087106633	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600088059617	Marionette	INFO	Stopped listening on port 56031
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600088115742	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileTT5VdZ"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600088120194	Marionette	INFO	Listening on port 56264
+1600088120557	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600088289275	Marionette	INFO	Stopped listening on port 56264
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600088296831	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofilenzIe6L"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600088301218	Marionette	INFO	Listening on port 56344
+1600088301644	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600088345589	Marionette	INFO	Stopped listening on port 56344
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600088350248	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileLHAQPr"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600088355290	Marionette	INFO	Listening on port 56419
+1600088355578	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600088384423	Marionette	INFO	Stopped listening on port 56419
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600088913805	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofilewzi8dN"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600088918007	Marionette	INFO	Listening on port 56542
+1600088918117	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600088980037	Marionette	INFO	Stopped listening on port 56542
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600090159868	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofilekNuoI1"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600090164300	Marionette	INFO	Listening on port 56773
+1600090164675	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600090226414	Marionette	INFO	Stopped listening on port 56773
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600090232447	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileRMx8oj"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600090236826	Marionette	INFO	Listening on port 56852
+1600090237262	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600090381348	Marionette	INFO	Stopped listening on port 56852
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600091627350	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileLlyd3C"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600091632044	Marionette	INFO	Listening on port 49926
+1600091632187	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600092669671	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileIVBAhL"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600092674020	Marionette	INFO	Listening on port 50511
+1600092674442	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600092925014	Marionette	INFO	Stopped listening on port 50511
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600092810471	Marionette	INFO	Listening on port 50601
+1600092810967	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600092922197	Marionette	INFO	Stopped listening on port 50601
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600092955818	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileRCVh3H"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600092959405	Marionette	INFO	Listening on port 50723
+1600092959514	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600092981471	Marionette	INFO	Stopped listening on port 50723
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600093004865	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileZsb1xP"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600093008420	Marionette	INFO	Listening on port 50796
+1600093008539	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600093030511	Marionette	INFO	Stopped listening on port 50796
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600093052586	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofileYT7caB"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600093056723	Marionette	INFO	Listening on port 50865
+1600093056757	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600093078784	Marionette	INFO	Stopped listening on port 50865
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1600093137269	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\diego\\AppData\\Local\\Temp\\rust_mozprofile4aPBNE"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1600093141262	Marionette	INFO	Listening on port 50940
+1600093141447	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.gemul-aparecida.com.br/Sistema/Default.asp, line 349: ReferenceError: CirclesMaster is not defined
+1600093163766	Marionette	INFO	Stopped listening on port 50940
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
