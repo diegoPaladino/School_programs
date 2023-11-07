@@ -1,0 +1,185 @@
+#INICIALIZAÇÃO
+
+
+# █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+# IMPORTANDO BIBLIOTECAS
+import pyautogui as p
+import time as t
+import os
+import subprocess
+import ctypes
+import keyboard
+from datetime import datetime
+
+# █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+# DECLARAÇÕES DE FUNÇÕES
+# Inicialize o contador de tempo
+start_time = t.time()
+
+
+def abrir_nova_aba():   
+
+    p.keyDown('ctrl')
+    t.sleep(0.2)
+    p.hotkey('t')
+    t.sleep(0.3)
+    p.keyUp('ctrl')
+    t.sleep(0.2)
+def ctrl_pageup():
+    p.keyDown('ctrl')
+    t.sleep(0.2)
+    p.hotkey('pageup')
+    t.sleep(0.3)
+    p.keyUp('ctrl')
+    t.sleep(0.2)
+def pagina_anterior():
+    p.keyDown('ctrl')
+    t.sleep(0.2)
+    p.hotkey('pageup')
+    t.sleep(0.3)
+    p.keyUp('ctrl')
+    t.sleep(0.2)
+def pageup():
+    p.hotkey('pageup')
+    t.sleep(0.3)
+def pagedown():
+    p.hotkey('pagedown')
+    t.sleep(0.3)
+password = 'GMLPALADINO'
+current_time = datetime.now()   
+def is_capslock_on():
+    return ctypes.windll.user32.GetKeyState(0x14) == 1
+# Verifica o estado do Caps Lock
+if is_capslock_on():
+    # Se o Caps Lock estiver ligado, desligue-o
+    p.press('capslock')
+# Pergunte a senha ao usuário
+senha = input("Digite a senha: ")
+# Se a senha estiver correta, execute as ações
+if senha.lower() == "paladino804680":
+    os.startfile(r"\\LAB\Users\Public\Videos\DIEGO\POTENCIALIZANDO_O_TEMPO-3.xlsm")
+    os.startfile(r"C:\Users\Public\ELENCO\ARQUIVO PASSIVO\ARQUIVO INATIVO 27-01-2023.xlsx")
+    os.startfile(r"C:\Users\Public\Videos\DIEGO\programas\potencializacao_diegopaladino\INICIALIZACAO.txt")
+    t.sleep(0.5)
+    # atalho para ampliar o bloco de notas
+    p.hotkey('win','up')
+    t.sleep(0.3)
+    
+    subprocess.Popen([r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe", "--start-maximized"])
+    # aguarda 5 segundos para que o navegador carregue recursos básicos
+    t.sleep(5)
+    # atalho para ampliar o bloco de notas
+    p.hotkey('win','up')
+    t.sleep(0.3)
+    p.typewrite("https://chat.openai.com")
+    p.press("Enter")
+    abrir_nova_aba()
+    t.sleep(1)
+    p.typewrite("https://bard.google.com")
+    p.press("Enter")
+    abrir_nova_aba()
+    t.sleep(1)
+    p.typewrite("https://web.whatsapp.com")
+    p.press("Enter")
+    abrir_nova_aba()
+    t.sleep(1)
+    p.typewrite("https://www.gemul-aparecida.com.br/login.asp")
+    p.press("Enter")
+    t.sleep(5)
+    p.press("Enter")
+    t.sleep(1)
+
+    # fazendo login no Gemul
+
+    
+    p.click(x=732, y=459)   # local do item: "PASSWORD"
+    t.sleep(0.3)
+    p.typewrite(password)
+    t.sleep(0.3)
+    p.hotkey('tab')
+    t.sleep(0.3)
+    p.press('enter')
+    t.sleep(3)
+    p.click(x=388, y=833)   # local do item: "BOTÃO LOGIN"
+    t.sleep(3)
+    p.click(x=370, y=46)   # local do item: barra de endereço
+    t.sleep(0.3)
+    p.typewrite("https://www.gemul-aparecida.com.br/app/sca_rel_alunoCon.asp")
+    p.press("Enter")
+    t.sleep(3)
+    pagedown()
+    
+    
+    #clicando em cada lugar para marcar as opções para gerar relatório
+    # Localiza o checkbox pelo nome e clica nele
+    
+    p.click(x=114, y=483)   # CPF
+    t.sleep(0.3)
+    p.click(115, 504)   # Data Afastamento
+    t.sleep(0.3)
+    p.click(112, 522)   # Data Matrícula
+    t.sleep(0.3)
+    p.click(114, 542)   # Data Nascimento
+    t.sleep(0.3)
+    p.click(891, 243)   # Idade
+    t.sleep(0.3)
+    p.click(892, 263)    # Naturalidade
+    t.sleep(0.3)
+    p.click(891, 303)    # Nome da Mãe
+    t.sleep(0.3)
+    p.click(891, 324)    # Nome do Pai
+    t.sleep(0.3)
+    p.click(890, 463)    # Sexo do Aluno
+    t.sleep(0.3)
+    p.click(890, 484)    # Situação do aluno
+    t.sleep(0.3)
+    p.click(890, 504)    # Telefone Celular
+    t.sleep(0.3)
+    p.click(891, 526)    # Telefone Comercial
+    t.sleep(0.3)
+    p.click(890, 543)    # Telefone Residencial
+    t.sleep(0.3)
+    p.click(891, 562)    # Telefone Responsável
+    t.sleep(0.3)
+    p.click(892, 583)    # Turma
+    t.sleep(0.3)
+    p.click(143, 734)    # Enter
+    t.sleep(0.3)
+    
+    abrir_nova_aba()
+    t.sleep(0.5)
+    p.typewrite("https://www.gemul-aparecida.com.br/app/sca_aluno.asp")  #abrindo janela "CADASTRO DE ALUNO"
+    p.press("Enter")
+    t.sleep(2)
+    p.press("Enter")
+    abrir_nova_aba()
+    t.sleep(0.5)
+    p.typewrite("https://www.gemul-aparecida.com.br/app/sca_historico_escolarCon.asp")  #abrindo janela "HISTÓRICO ESCOLAR LANÇAMENTO"
+    p.press("Enter")
+    abrir_nova_aba()
+    t.sleep(0.5)
+    p.typewrite("https://www.gemul-aparecida.com.br/app/sca_rel_historico_escolar_educacao_infantilCon.asp")  #abrindo janela "HISTÓRICO ESCOLAR DO ENSINO INFANTIL"
+    p.press("Enter")
+    abrir_nova_aba()
+    t.sleep(0.5)
+    p.typewrite("https://www.gemul-aparecida.com.br/app/sca_rel_historico_escolar_ensino_fundamentalCon.asp")  #abrindo janela "HISTÓRICO ESCOLAR DO ENSINO FUNDAMENTAL"
+    p.press("Enter")
+    abrir_nova_aba()
+    t.sleep(0.5)
+    p.typewrite("https://www.gemul-aparecida.com.br/App/sca_rel_ficha_descritivaCon.asp")  #abrindo janela "FICHA DESCRITIVA"
+    p.press("Enter")
+    abrir_nova_aba()
+    t.sleep(0.5)
+    p.typewrite("https://www.gemul-aparecida.com.br/app/sca_rel_extrato_nota_faltaCon.asp")  #abrindo janela "EXTRATO DE NOTAS E FALTAS"
+    p.press("Enter")
+    t.sleep(0.5)
+    
+    print('Programa finalizado em ',current_time.strftime('%H:%M:%S'))   
+else:
+    print("Senha incorreta.")
+# Obtenha o tempo decorrido
+end_time = t.time()
+
+# Imprima o tempo decorrido
+print("Tempo decorrido:", end_time - start_time)
+
