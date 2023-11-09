@@ -58,7 +58,15 @@ senha = input("Digite a senha: ")
 # Se a senha estiver correta, execute as ações
 if senha.lower() == "paladino804680":
     os.startfile(r"\\LAB\Users\Public\Videos\DIEGO\POTENCIALIZANDO_O_TEMPO-3.xlsm")
+    t.sleep(0.5)
+    # atalho para ampliar o bloco de notas
+    p.hotkey('win','up')
+    t.sleep(0.3)
     os.startfile(r"C:\Users\Public\ELENCO\ARQUIVO PASSIVO\ARQUIVO INATIVO 27-01-2023.xlsx")
+    t.sleep(0.5)
+    # atalho para ampliar o bloco de notas
+    p.hotkey('win','up')
+    t.sleep(0.3)
     os.startfile(r"C:\Users\Public\Videos\DIEGO\programas\potencializacao_diegopaladino\INICIALIZACAO.txt")
     t.sleep(0.5)
     # atalho para ampliar o bloco de notas
