@@ -143,3 +143,8 @@ while True:
     colar()
     enter() #mandando imprimir, para salvar como PDF
     t.sleep(2)
+    
+    
+    
+    
+    #to be a 2.0 version, printing class students list
