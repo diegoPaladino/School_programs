@@ -45,7 +45,7 @@ server.sendmail(email_login,senha,text)
 server.quit()
 
 #execution
-
+# program this to execute every month
 
 
 
