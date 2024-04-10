@@ -113,3 +113,6 @@ print('#########################################################################
 # Mantém a janela do navegador aberta até que o usuário decida fechá-la
 input("Pressione Enter para fechar o navegador...")
 #driver.quit()
+
+
+#create a program that do
