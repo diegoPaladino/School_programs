@@ -1,3 +1,9 @@
+#checar este código para cer se o titulo condiz
+
+
+
+
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
