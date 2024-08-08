@@ -1,3 +1,13 @@
+'''
+EXPLICAÇÕES DO PROGRAMA
+1. Arquivo Excel (ELENCO AUTOMÁTICO 2024 - VESPERTINO-(...)) deve estar aberto 
+2. 
+
+
+
+'''
+
+
 # Bibliotecas
 import time
 import json
@@ -165,6 +175,13 @@ def click():
 def end():
     p.hotkey('end')
     time.sleep(0.2)
+
+
+
+
+
+
+
 
 
 
