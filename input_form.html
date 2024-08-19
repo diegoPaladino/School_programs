@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de Dados</title>
+</head>
+<body>
+    <form id="data-form">
+        <label for="agrupamento">Agrupamento:</label>
+        <select id="agrupamento" name="agrupamento">
+            <option value="AGRUPAMENTO 4">AGRUPAMENTO 4</option>
+            <option value="AGRUPAMENTO 5">AGRUPAMENTO 5</option>
+            <option value="1º ANO">1º ANO</option>
+            <option value="2º ANO">2º ANO</option>
+            <option value="3º ANO">3º ANO</option>
+            <option value="4º ANO">4º ANO</option>
+            <option value="5º ANO">5º ANO</option>
+        </select><br><br>
+
+        <label for="nome_escola">Nome da Escola:</label>
+        <input type="text" id="nome_escola" name="nome_escola"><br><br>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade"><br><br>
+
+        <label for="uf">UF:</label>
+        <input type="text" id="uf" name="uf"><br><br>
+
+        <label for="carga_horaria">Carga Horária:</label>
+        <input type="number" id="carga_horaria" name="carga_horaria"><br><br>
+
+        <button type="button" onclick="submitForm()">OK</button>
+    </form>
+
+    <script>
+        function submitForm() {
+            const data = {
+                agrupamento: document.getElementById('agrupamento').value,
+                nome_escola: document.getElementById('nome_escola').value,
+                cidade: document.getElementById('cidade').value,
+                uf: document.getElementById('uf').value,
+                carga_horaria: document.getElementById('carga_horaria').value
+            };
+            console.log(JSON.stringify(data));
+            alert(JSON.stringify(data));  // Adiciona um alerta para confirmar o envio
+        }
+    </script>
+</body>
+</html>
