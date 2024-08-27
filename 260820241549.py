@@ -10,6 +10,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException, NoAlertPresentException, UnexpectedAlertPresentException
 from selenium.common.exceptions import StaleElementReferenceException, ElementClickInterceptedException, NoAlertPresentException
 import pyautogui as p
 import clipboard as c
@@ -245,25 +246,32 @@ class FuncoesDoPrograma:
         driver.switch_to.window(driver.window_handles[6])
 
     def fechar_elementos_e_alertas(driver):
-        # Verificar e lidar com alertas do navegador
-        try:
-            WebDriverWait(driver, 1).until(EC.alert_is_present())
-            alert = driver.switch_to.alert
-            print(alert.text)  # Ajuda na depuração
-            alert.accept()  # Fecha o alerta
-            print("Alerta fechado com sucesso.")
-        except NoAlertPresentException:
-            pass
-
-        # Verificar e lidar com elementos de sobreposição no DOM
-        try:
-            modal = WebDriverWait(driver, 1).until(
-                EC.element_to_be_clickable((By.XPATH, '//xpath-do-elemento-que-precisa-ser-fechado'))
-            )
-            modal.click()
-            print("Elemento de sobreposição fechado com sucesso.")
-        except Exception as e:
-            print("Nenhum elemento de sobreposição encontrado ou erro ao fechar:", e)
+    try:
+        # Primeiro, verificamos se há um alerta presente
+        WebDriverWait(driver, 5).until(EC.alert_is_present())
+        alert = driver.switch_to.alert
+        alert.accept()
+        print("Alerta fechado com sucesso.")
+    except TimeoutException:
+        print("Nenhum alerta presente.")
+    except NoAlertPresentException:
+        print("Nenhum alerta para ser fechado.")
+    except UnexpectedAlertPresentException as e:
+        # Captura o texto do alerta inesperado e fecha o alerta
+        alert = driver.switch_to.alert
+        alert_text = alert.text
+        alert.accept()
+        print(f"Alerta inesperado fechado. Texto do alerta: {alert_text}")
+    
+    # Fechar elementos de sobreposição (modais)
+    try:
+        sobreposicao_elemento = WebDriverWait(driver, 1).until(
+            EC.element_to_be_clickable((By.XPATH, '//*[@id="fechar_modal"]'))
+        )
+        sobreposicao_elemento.click()
+        print("Elemento de sobreposição fechado com sucesso.")
+    except Exception as e:
+        print(f"Nenhum elemento de sobreposição encontrado ou erro ao fechar: {e}")
 
 
     def escrever_texto(driver, xpath, texto):
@@ -688,11 +696,11 @@ class ProcessamentoDeObservacoes:
 
         # Condição para ano igual a 2020
         elif ano == 2020:
-            return self.processa_ano_2020(escola, cidade, ja_estudou, ficha_descritiva)
+            return self.processa_ano_2020(escola, cidade, ja_estudou, ficha_descritiva, observacoes)
 
         # Condição para ano igual a 2021
         elif ano == 2021:
-            return self.processa_ano_2021(escola, cidade, ja_estudou, ficha_descritiva)
+            return self.processa_ano_2021(escola, cidade, ja_estudou, ficha_descritiva, observacoes)
 
         # Condição para o ano corrente
         elif ano == ano_corrente:
@@ -1158,7 +1166,6 @@ class SerieEscolhida:
         FuncoesDoPrograma.clicar_botao_incluir_final(driver, '//*[@id="panel-8"]/div[2]/div/div[3]/div[3]/button[1]') or print('botao incluir final clicado')
         FuncoesDoPrograma.fechar_elementos_e_alertas(driver) or print('janela de alerta fechada')
 
-
     @staticmethod
     def ano2(driver, ano, nome_escola, cidade, ja_estudou, ficha_descritiva, txt_observacoes, serie, carga_horaria, dados):
         print("Executada lógica para 2º ANO")
@@ -1209,6 +1216,160 @@ class SerieEscolhida:
         FuncoesDoPrograma.marcar_checkbox_omitir_media(driver, '//*[@id="card_dados_familiares"]/div[2]/div/div[2]/div[4]/div/input') or print('Checkbox omitir media marcado - 1º momento')
         FuncoesDoPrograma.clicar_botao_incluir_final(driver, '//*[@id="panel-8"]/div[2]/div/div[3]/div[3]/button[1]') or print('Botão incluir final clicado')
         FuncoesDoPrograma.fechar_elementos_e_alertas(driver) or print('Janela de alerta fechada')
+
+    @staticmethod
+    def ano3(driver, ano, nome_escola, cidade, ja_estudou, ficha_descritiva, txt_observacoes, serie, carga_horaria, dados):
+        print("Executada lógica para 3º ANO")
+        
+        # Seleciona a terceira janela aberta
+        FuncoesDoPrograma.seleciona_terceira_janela(driver) or print('Terceira janela selecionada')
+        
+        # Clica no botão para incluir um novo registro
+        FuncoesDoPrograma.btn_incluir_start() or print('Botão incluir clicado')
+        
+        # Escreve o ano na caixa correspondente
+        FuncoesDoPrograma.escrever_ano_na_caixa(driver, ano) or print('Ano escrito na caixa')
+        
+        # Seleciona o curso e o período para o 3º ano
+        seletor.curso_EF_ENSINO_FUNDAMENTAL() or print('Ensino Fundamental selecionado')
+        seletor.periodo_EF_ENSINO_FUNDAMENTAL(3) or print('3º ano selecionado')
+        
+        # Preenche informações da escola, cidade e UF
+        FuncoesDoPrograma.escrever_texto(driver, '//*[@id="txtEscola"]', nome_escola) or print('Nome da escola escrito')
+        FuncoesDoPrograma.escrever_texto(driver, '//*[@id="txtCidade"]', cidade) or print('Nome da cidade escrito')
+        FuncoesDoPrograma.seleciona_uf() or print('UF selecionada')
+        
+        # Escreve as observações
+        escrever_observacoes(driver, ano, nome_escola, cidade, ja_estudou, ficha_descritiva, txt_observacoes, serie, carga_horaria) or print('Observações escritas')
+        
+        # Instancia a classe SelecionaMateria para processar as disciplinas
+        seletor_materia = SelecionaMateria(driver)
+        
+        # Processamento das disciplinas usando os dados coletados
+        disciplinas_notas = {
+            "ARTES": dados['nota_arte'],
+            "CIÊNCIAS": dados['nota_ciencias'],
+            "CULTURA DE INOVAÇÃO E TECNOLOGIAS": dados['nota_cultura'],
+            "EDUCAÇÃO FÍSICA": dados['nota_educacao_fisica'],
+            "ENSINO RELIGIOSO": dados['nota_ensino_religioso'],
+            "GEOGRAFIA": dados['nota_geografia'],
+            "HISTÓRIA": dados['nota_historia'],
+            "LÍNGUA PORTUGUESA": dados['nota_lingua_portuguesa'],
+            "MATEMÁTICA": dados['nota_matematica']
+        }
+        
+        for disciplina, nota in disciplinas_notas.items():
+            seletor_materia.processar_disciplina(disciplina, nota)
+        
+        # Passo final após todas as disciplinas terem sido processadas
+        FuncoesDoPrograma.fechar_elementos_e_alertas(driver) or print('Janela de alerta fechada')
+        FuncoesDoPrograma.clicar_item_gerado(driver, '//*[@id="panel-1"]/div[2]/div/div/table/tbody/tr[1]/td[1]') or print('1º momento clicado para marcar checkbox')
+        FuncoesDoPrograma.marcar_checkbox_omitir_media(driver, '//*[@id="card_dados_familiares"]/div[2]/div/div[2]/div[4]/div/input') or print('Checkbox omitir media marcado - 1º momento')
+        FuncoesDoPrograma.clicar_botao_incluir_final(driver, '//*[@id="panel-8"]/div[2]/div/div[3]/div[3]/button[1]') or print('Botão incluir final clicado')
+        FuncoesDoPrograma.fechar_elementos_e_alertas(driver) or print('Janela de alerta fechada')
+
+    @staticmethod
+    def ano4(driver, ano, nome_escola, cidade, ja_estudou, ficha_descritiva, txt_observacoes, serie, carga_horaria, dados):
+        print("Executada lógica para 4º ANO")
+        
+        # Seleciona a terceira janela aberta
+        FuncoesDoPrograma.seleciona_terceira_janela(driver) or print('Terceira janela selecionada')
+        
+        # Clica no botão para incluir um novo registro
+        FuncoesDoPrograma.btn_incluir_start() or print('Botão incluir clicado')
+        
+        # Escreve o ano na caixa correspondente
+        FuncoesDoPrograma.escrever_ano_na_caixa(driver, ano) or print('Ano escrito na caixa')
+        
+        # Seleciona o curso e o período para o 4º ano
+        seletor.curso_EF_ENSINO_FUNDAMENTAL() or print('Ensino Fundamental selecionado')
+        seletor.periodo_EF_ENSINO_FUNDAMENTAL(4) or print('4º ano selecionado')
+        
+        # Preenche informações da escola, cidade e UF
+        FuncoesDoPrograma.escrever_texto(driver, '//*[@id="txtEscola"]', nome_escola) or print('Nome da escola escrito')
+        FuncoesDoPrograma.escrever_texto(driver, '//*[@id="txtCidade"]', cidade) or print('Nome da cidade escrito')
+        FuncoesDoPrograma.seleciona_uf() or print('UF selecionada')
+        
+        # Escreve as observações
+        escrever_observacoes(driver, ano, nome_escola, cidade, ja_estudou, ficha_descritiva, txt_observacoes, serie, carga_horaria) or print('Observações escritas')
+        
+        # Instancia a classe SelecionaMateria para processar as disciplinas
+        seletor_materia = SelecionaMateria(driver)
+        
+        # Processamento das disciplinas usando os dados coletados
+        disciplinas_notas = {
+            "ARTES": dados['nota_arte'],
+            "CIÊNCIAS": dados['nota_ciencias'],
+            "CULTURA DE INOVAÇÃO E TECNOLOGIAS": dados['nota_cultura'],
+            "EDUCAÇÃO FÍSICA": dados['nota_educacao_fisica'],
+            "ENSINO RELIGIOSO": dados['nota_ensino_religioso'],
+            "GEOGRAFIA": dados['nota_geografia'],
+            "HISTÓRIA": dados['nota_historia'],
+            "LÍNGUA PORTUGUESA": dados['nota_lingua_portuguesa'],
+            "MATEMÁTICA": dados['nota_matematica']
+        }
+        
+        for disciplina, nota in disciplinas_notas.items():
+            seletor_materia.processar_disciplina(disciplina, nota)
+        
+        # Passo final após todas as disciplinas terem sido processadas
+        FuncoesDoPrograma.fechar_elementos_e_alertas(driver) or print('Janela de alerta fechada')
+        FuncoesDoPrograma.clicar_item_gerado(driver, '//*[@id="panel-1"]/div[2]/div/div/table/tbody/tr[1]/td[1]') or print('1º momento clicado para marcar checkbox')
+        FuncoesDoPrograma.marcar_checkbox_omitir_media(driver, '//*[@id="card_dados_familiares"]/div[2]/div/div[2]/div[4]/div/input') or print('Checkbox omitir media marcado - 1º momento')
+        FuncoesDoPrograma.clicar_botao_incluir_final(driver, '//*[@id="panel-8"]/div[2]/div/div[3]/div[3]/button[1]') or print('Botão incluir final clicado')
+        FuncoesDoPrograma.fechar_elementos_e_alertas(driver) or print('Janela de alerta fechada')
+
+    @staticmethod
+    def ano5(driver, ano, nome_escola, cidade, ja_estudou, ficha_descritiva, txt_observacoes, serie, carga_horaria, dados):
+        print("Executada lógica para 5º ANO")
+        
+        # Seleciona a terceira janela aberta
+        FuncoesDoPrograma.seleciona_terceira_janela(driver) or print('Terceira janela selecionada')
+        
+        # Clica no botão para incluir um novo registro
+        FuncoesDoPrograma.btn_incluir_start() or print('Botão incluir clicado')
+        
+        # Escreve o ano na caixa correspondente
+        FuncoesDoPrograma.escrever_ano_na_caixa(driver, ano) or print('Ano escrito na caixa')
+        
+        # Seleciona o curso e o período para o 5º ano
+        seletor.curso_EF_ENSINO_FUNDAMENTAL() or print('Ensino Fundamental selecionado')
+        seletor.periodo_EF_ENSINO_FUNDAMENTAL(5) or print('5º ano selecionado')
+        
+        # Preenche informações da escola, cidade e UF
+        FuncoesDoPrograma.escrever_texto(driver, '//*[@id="txtEscola"]', nome_escola) or print('Nome da escola escrito')
+        FuncoesDoPrograma.escrever_texto(driver, '//*[@id="txtCidade"]', cidade) or print('Nome da cidade escrito')
+        FuncoesDoPrograma.seleciona_uf() or print('UF selecionada')
+        
+        # Escreve as observações
+        escrever_observacoes(driver, ano, nome_escola, cidade, ja_estudou, ficha_descritiva, txt_observacoes, serie, carga_horaria) or print('Observações escritas')
+        
+        # Instancia a classe SelecionaMateria para processar as disciplinas
+        seletor_materia = SelecionaMateria(driver)
+        
+        # Processamento das disciplinas usando os dados coletados
+        disciplinas_notas = {
+            "ARTES": dados['nota_arte'],
+            "CIÊNCIAS": dados['nota_ciencias'],
+            "CULTURA DE INOVAÇÃO E TECNOLOGIAS": dados['nota_cultura'],
+            "EDUCAÇÃO FÍSICA": dados['nota_educacao_fisica'],
+            "ENSINO RELIGIOSO": dados['nota_ensino_religioso'],
+            "GEOGRAFIA": dados['nota_geografia'],
+            "HISTÓRIA": dados['nota_historia'],
+            "LÍNGUA PORTUGUESA": dados['nota_lingua_portuguesa'],
+            "MATEMÁTICA": dados['nota_matematica']
+        }
+        
+        for disciplina, nota in disciplinas_notas.items():
+            seletor_materia.processar_disciplina(disciplina, nota)
+        
+        # Passo final após todas as disciplinas terem sido processadas
+        FuncoesDoPrograma.fechar_elementos_e_alertas(driver) or print('Janela de alerta fechada')
+        FuncoesDoPrograma.clicar_item_gerado(driver, '//*[@id="panel-1"]/div[2]/div/div/table/tbody/tr[1]/td[1]') or print('1º momento clicado para marcar checkbox')
+        FuncoesDoPrograma.marcar_checkbox_omitir_media(driver, '//*[@id="card_dados_familiares"]/div[2]/div/div[2]/div[4]/div/input') or print('Checkbox omitir media marcado - 1º momento')
+        FuncoesDoPrograma.clicar_botao_incluir_final(driver, '//*[@id="panel-8"]/div[2]/div/div[3]/div[3]/button[1]') or print('Botão incluir final clicado')
+        FuncoesDoPrograma.fechar_elementos_e_alertas(driver) or print('Janela de alerta fechada')
+
 
 # CÓDIGO
 dados = obter_matricula()
@@ -1265,7 +1426,15 @@ if numero_matricula and len(numero_matricula) == 9:
     if dados['serie'] == "1º ANO":
         SerieEscolhida.ano1(driver, ano, nome_escola, cidade, ja_estudou, ficha_descritiva, txt_observacoes, serie, carga_horaria, dados)
     if dados['serie'] == "2º ANO":
-        SerieEscolhida.ano1(driver, ano, nome_escola, cidade, ja_estudou, ficha_descritiva, txt_observacoes, serie, carga_horaria, dados)
+        SerieEscolhida.ano2(driver, ano, nome_escola, cidade, ja_estudou, ficha_descritiva, txt_observacoes, serie, carga_horaria, dados)
+    if dados['serie'] == "3º ANO":
+        SerieEscolhida.ano3(driver, ano, nome_escola, cidade, ja_estudou, ficha_descritiva, txt_observacoes, serie, carga_horaria, dados)
+    if dados['serie'] == "4º ANO":
+        SerieEscolhida.ano4(driver, ano, nome_escola, cidade, ja_estudou, ficha_descritiva, txt_observacoes, serie, carga_horaria, dados)
+    if dados['serie'] == "5º ANO":
+        SerieEscolhida.ano5(driver, ano, nome_escola, cidade, ja_estudou, ficha_descritiva, txt_observacoes, serie, carga_horaria, dados)
+
+    
     Atalho.alerta_sonoro()
     input("Pressione Enter para fechar o navegador...")
 
@@ -1285,8 +1454,8 @@ else:
 
 
 
-'''260820241145
-1. 1163 - def ano2
+'''260820241559
+1. atualização fechar elementos
 
 
 '''
